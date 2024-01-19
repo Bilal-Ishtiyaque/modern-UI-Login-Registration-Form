@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+:root{
+  --light-text : #bbb;
+  --purple-blue : #8371fd;
+  --light-black :#151111 ;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  background-color: #ff8c6b;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 1020px;
+  height: 640px;
+  background-color: #fff;
+  border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.inner-box {
+  position: absolute;
+  width: calc(100% - 4.1rem);
+  height: calc(100% - 4.1rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forms-wrapper {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  transition: left 0.8s ease-in-out;
+}
+
+form {
+  max-width: 260px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: opacity 0.2s 0.35s;
+}
+
+.sign-up-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sign-in-form {
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 27px;
+  margin-right: 0.3rem;
+}
+
+.logo h4 {
+  font-size: 1.1rem;
+  margin-top: -9px;
+  letter-spacing: -0.5px;
+  color: var(--light-black);
+}
+
+.heading {
+}
+
+.heading h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--light-black);
+}
+
+.heading h6 {
+  color: var(--light-text);
+  font-weight: 400;
+  font-size: 0.75rem;
+  display: inline;
+}
+
+.toggle {
+  color: var(--light-black);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.toggle:hover {
+  color: var(--purple-blue);
+}
+
+.name-pass-box {
+}
+
+.input-wrap {
+  position: relative;
+  height: 37px;
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid var(--light-text);
+  outline: none;
+  padding: 0;
+  font-size: 0.95rem;
+  color: var(--light-black);
+  transition: border 0.4s;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-text);
+  pointer-events: none;
+  transition: top 0.4s;
+  /* z-index: 2; */
+}
+
+.input-field.active {
+  border-color: var(--light-black);
+}
+
+.input-field.active + label {
+  font-size: 0.75rem;
+  top: -2px;
+}
+
+.sign-btn {
+  width: 100%;
+  height: 43px;
+  background-color: var(--light-black);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s;
+}
+
+.sign-btn:hover {
+  background-color: var(--purple-blue);
+}
+
+.text {
+  color: var(--light-text);
+  font-size: 0.7rem;
+}
+
+.text a {
+  color: var(--light-text);
+  transition: color 0.3s;
+}
+
+.text a:hover {
+  color: var(--purple-blue);
+}
+
+.carousel {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  background-color: #ffe0d2;
+  top: 0;
+  left: 45%;
+  border-radius: 2rem;
+  transition: left 0.8s ease-in-out;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+main.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+main.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  pointer-events: all;
+}
+
+main.sign-up-mode .forms-wrapper {
+  left: 55%;
+}
+
+main.sign-up-mode .carousel {
+  left: 0%;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image-wrapper {
+}
+
+.image {
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+.img-1 {
+  transform: translate(0, -50px);
+}
+
+.img-2 {
+  transform: scale(0.4, 0.5);
+}
+
+.img-3 {
+  transform: scale(0.4) rotate(-20deg);
+}
+
+.image.show {
+  opacity: 1;
+  transform: none;
+}
+
+.text-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper {
+  height: 2.2rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
+
+.text-group h2 {
+  line-height: 2.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.nav-bullets {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-bullets span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transition: width 0.3s;
+}
+
+.nav-bullets span.active {
+  width: 16px;
+  border-radius: 16px;
+}
+
+@media (max-width: 850px) {
+  .box {
+    height: auto;  /*here we changed height from 640px to auto which leads the children to get out of the document flow*/
+    max-width: 550px; /*here we reduced width from 100% to 550px*/
+    overflow: hidden;
+  }
+
+  .inner-box {
+    position: static; /*here we get inner box back into document flow*/
+    transform: none;
+    width: revert;
+    height: revert;
+    padding: 1rem 1.5rem 1rem;
+  }
+
+  .forms-wrapper {
+    position: revert; /*here we also getting inner box's child back into document flow */
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel {
+    position: revert; /*here we also getting inner box's child back into document flow */
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .image-wrapper {
+    display: none;
+  }
+
+  .text-slider {
+    width: 100%;
+  }
+
+  form {
+    max-width: revert;
+    padding: 0.5rem 0rem 0rem;
+    transition: transform 0.8s ease-in-out, opacity 0.45s linear;
+  }
+
+  .heading {
+    margin: 2rem 0;
+  }
+
+  
+  form.sign-up-form{
+    transform: translateX(100%);
+  }
+
+  
+  main.sign-up-mode form.sign-in-form{
+    transform: translateX(-100%);
+  }
+
+  main.sign-up-mode form.sign-up-form{
+    transform: translateX(0%);
+  }
+  
+  
+}
+
+
+@media (max-width:530px){
+  main{
+    padding: 1rem;
+  }
+
+  .box{
+    border-radius: 2rem; /*here we have recduced border radius*/
+  }
+
+  .carousel {
+    padding: 1.5rem 1rem;
+    border-radius: 1.6rem;
+  }
+
+  .text-wrapper {
+    margin-bottom: 1.3rem;
+  }
+
+  .text-group h2 {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 1rem 0 1.5rem;
+  }
+}
+
+@media (max-width:380px){
+
+
+  .inner-box{
+    padding: 1rem 0.5rem;
+  }
+
+  .forms-wrapper{
+    padding: 1rem;
+  }
+
+  .carousel{
+    padding: 1rem 0 ;
+
+  }
+
+  
+}
