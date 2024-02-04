@@ -1,4 +1,10 @@
-🔶𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐀𝐬𝐩𝐞𝐜𝐭𝐬 :
+# Preview :
+![login](https://github.com/Bilal-Ishtiyaque/modern-UI-Login-Registration-Form/assets/139645574/c9c2cc59-1b9d-41ce-a6d6-4efe1ab46abf)
+
+# LinkedIn video link ⬇️
+[Form video](https://www.linkedin.com/feed/update/urn:li:activity:7154061365316378626/?originTrackingId=8Kz1Myr%2FQQ6PLkYfd80%2BQg%3D%3D)
+
+# 🔶 Technical Aspects :
  
 Firstly, there is a 𝗺𝗮𝗶𝗻 element 𝘁𝗮𝗴 that serves as the primary content section.
 
@@ -32,8 +38,3 @@ For each image change, the .𝘁𝗲𝘅𝘁-𝗴𝗿𝗼𝘂𝗽 inside the .�
  
 The 𝗻𝗮𝘃𝗶𝗴𝗮𝘁𝗶𝗼𝗻 𝗯𝘂𝗹𝗹𝗲𝘁𝘀 help users to navigate through the images, allowing them to control the content they see in the .𝗰𝗮𝗿𝗼𝘂𝘀𝗲𝗹 div.
 
-# Preview :
-
-
-
-![login](https://github.com/Bilal-Ishtiyaque/modern-UI-Login-Registration-Form/assets/139645574/c9c2cc59-1b9d-41ce-a6d6-4efe1ab46abf)
