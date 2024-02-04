@@ -32,3 +32,8 @@ For each image change, the .𝘁𝗲𝘅𝘁-𝗴𝗿𝗼𝘂𝗽 inside the .�
  
 The 𝗻𝗮𝘃𝗶𝗴𝗮𝘁𝗶𝗼𝗻 𝗯𝘂𝗹𝗹𝗲𝘁𝘀 help users to navigate through the images, allowing them to control the content they see in the .𝗰𝗮𝗿𝗼𝘂𝘀𝗲𝗹 div.
 
+# Preview :
+
+
+
+![login](https://github.com/Bilal-Ishtiyaque/modern-UI-Login-Registration-Form/assets/139645574/c9c2cc59-1b9d-41ce-a6d6-4efe1ab46abf)
