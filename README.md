@@ -2,7 +2,7 @@
 ![login](https://github.com/Bilal-Ishtiyaque/modern-UI-Login-Registration-Form/assets/139645574/c9c2cc59-1b9d-41ce-a6d6-4efe1ab46abf)
 
 # LinkedIn video link ⬇️
-[Form video](https://www.linkedin.com/feed/update/urn:li:activity:7154061365316378626/?originTrackingId=8Kz1Myr%2FQQ6PLkYfd80%2BQg%3D%3D)
+[Form video](https://www.linkedin.com/feed/update/urn:li:activity:7183512822776020992/)
 
 # 🔶 Technical Aspects :
  
